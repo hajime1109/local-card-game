@@ -2,32 +2,32 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>P2P Test</title>
-    <h2>受信したメッセージ</h2>
-    <div id="messages"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P2Pカードゲーム テスト</title>
+    <script src="https://unpkg.com/peerjs@1.5.2/peerjs.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>P2P通信テスト</h1>
+
+        <p>あなたのID: <span id="my-id"></span></p>
+
+        <h2>接続</h2>
+        <input type="text" id="their-id" placeholder="相手のID">
+        <button id="connect-btn">接続</button>
+
+        <h2>メッセージ送信</h2>
+        <input type="text" id="message-input" placeholder="メッセージ">
+        <button id="send-btn">送信</button>
+
+        <h2>受信したメッセージ</h2>
+        <div id="messages"></div>
+    </div>
 
     <script src="./game-logic.js"></script>
     <script src="./script.js"></script>
-</body>
-</html>
-    <script src="https://unpkg.com/peerjs@1.5.2/dist/peer.min.js"></script>
-</head>
-<body>
-    <h1>P2P通信テスト</h1>
 
-    <p>あなたのID: <span id="my-id"></span></p>
-
-    <h2>接続</h2>
-    <input type="text" id="their-id" placeholder="相手のID">
-    <button id="connect-btn">接続</button>
-
-    <h2>メッセージ送信</h2>
-    <input type="text" id="message-input" placeholder="メッセージ">
-    <button id="send-btn">送信</button>
-
-    <h2>受信したメッセージ</h2>
-    <div id="messages"></div>
-
-    <script src="./script.js"></script>
 </body>
 </html>
